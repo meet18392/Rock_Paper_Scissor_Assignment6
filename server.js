@@ -43,9 +43,9 @@ app.post("/play/rock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.json(JSONObj);
+              //res.json(JSONObj);
               //response.end();
-              //res = callHTML(req, res);
+              res = callHTML(req, res);
             }
 
             else if(rest==="paper")
@@ -56,8 +56,8 @@ app.post("/play/rock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              //res=callHTML(req,res);
-              res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
             }
 
@@ -69,8 +69,8 @@ app.post("/play/rock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              //res=callHTML(req,res);
-             res.json(JSONObj);
+              res=callHTML(req,res);
+             //res.json(JSONObj);
               //response.end();
             }
             
@@ -82,8 +82,8 @@ app.post("/play/rock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              //res=callHTML(req,res);
-             res.json(JSONObj);
+              res=callHTML(req,res);
+             //res.json(JSONObj);
               //response.end();
               
             }
@@ -96,8 +96,8 @@ app.post("/play/rock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              //res=callHTML(req,res);
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -123,7 +123,8 @@ app.post("/play/paper", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -136,7 +137,8 @@ app.post("/play/paper", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -149,7 +151,8 @@ app.post("/play/paper", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -162,7 +165,8 @@ app.post("/play/paper", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -175,14 +179,15 @@ app.post("/play/paper", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
 
          }   
       
-	res.send("<html><head></head><body><h1>Paper</h1></body></html>");
+	//res.send("<html><head></head><body><h1>Paper</h1></body></html>");
 
 });
 
@@ -202,7 +207,8 @@ app.post("/play/scissor", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -215,8 +221,9 @@ app.post("/play/scissor", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
-              response.end();
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
+              //response.end();
               
             }
 
@@ -228,8 +235,9 @@ app.post("/play/scissor", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
-              response.end();
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
+              //response.end();
               
             }
             
@@ -241,7 +249,8 @@ app.post("/play/scissor", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.send(JSON.stringify(JSONObj))
+              res=callHTML(req,res);
+              //res.send(JSON.stringify(JSONObj))
               //response.end();
               
             }
@@ -254,14 +263,15 @@ app.post("/play/scissor", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
 
          }   
 
-	res.send("<html><head></head><body><h1>Scissor</h1></body></html>");
+	//res.send("<html><head></head><body><h1>Scissor</h1></body></html>");
 
 });
 app.post("/play/lizard", function (req, res)
@@ -281,7 +291,8 @@ app.post("/play/lizard", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -294,7 +305,8 @@ app.post("/play/lizard", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -307,7 +319,8 @@ app.post("/play/lizard", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -320,7 +333,8 @@ app.post("/play/lizard", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -333,14 +347,15 @@ app.post("/play/lizard", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
 
          }   
       
-	res.send("<html><head></head><body><h1>lizard</h1></body></html>");
+	//res.send("<html><head></head><body><h1>lizard</h1></body></html>");
 
 });
 app.post("/play/spock", function (req, res)
@@ -360,7 +375,8 @@ app.post("/play/spock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -373,7 +389,8 @@ app.post("/play/spock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -386,7 +403,8 @@ app.post("/play/spock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -399,7 +417,8 @@ app.post("/play/spock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-             res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
@@ -412,13 +431,14 @@ app.post("/play/spock", function (req, res)
               JSONObj.wins=win;
               JSONObj.losses=loss;
               JSONObj.ties=tie;
-              res.json(JSONObj);
+              res=callHTML(req,res);
+              //res.json(JSONObj);
               //response.end();
               
             }
 
          }   
-	res.send("<html><head></head><body><h1>Spock</h1></body></html>");
+	//res.send("<html><head></head><body><h1>Spock</h1></body></html>");
 
 });
 
